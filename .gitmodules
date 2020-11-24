@@ -1,0 +1,7 @@
+[submodule "hugo-coder"]
+	path = hugo-coder
+	url = https://github.com/luizdepra/hugo-coder
+[submodule "public"]
+	path = public
+	url = https://github.com/jfinmaniv/jfinmaniv.github.io.git
+	branch = master
