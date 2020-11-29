@@ -1,0 +1,83 @@
+baseurl: "https://www.johninman.dev/"
+title: ji
+theme: ghostwriter
+languageCode: en-us
+copyright: John Inman
+# disqusShortname: XXX
+# googleAnalytics: XXX
+pygmentsUseClasses: true
+pygmentsCodefences: true
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    tabWidth: 2
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+
+author:
+  name: John Inman
+  profile: ""
+
+taxonomies:
+  tag: tags
+
+params:
+  mainSections:
+    - post
+  intro: true
+  headline: John Inman
+  description: Data Analyst
+  github: "https://github.com/jfinmaniv"
+  # gitlab: "https://gitlab.com/XXX"
+  linkedin: "https://linkedin.com/in/john-inman-3a029b138"
+  twitter: "https://twitter.com/jfinmaniv"
+  # stackoverflow: "https://stackoverflow.com/users/XXX/YYY"
+  # facebook: "https://www.facebook.com/username"
+  email: john@johninman.dev
+  opengraph: true
+  shareTwitter: true
+  rss: true
+  shareFacebook: true
+  shareLinkedIn: false
+  dateFormat: "Mon, Jan 2, 2006"
+  exponeaJsUrl: ""
+  exponeaTarget: ""
+  exponeaToken: ""
+  exponeaTrackVisits: false
+  readingTime: true
+  readingTimeText: "Estimated reading time:"
+  fathomUrl: ""
+  fathomSiteId: ""
+  # If you want to use plausible(https://plausible.io) for analytics, add this section
+  plausibleAnalytics:
+    domain: ""
+    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+    serverURL: ""
+
+permalinks:
+  post: "/:year/:month/:day/:filename/"
+
+menu:
+  main:
+    - name: Projects
+      url: /
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
+    - name: Contact
+      url: /contact/
+      weight: 3

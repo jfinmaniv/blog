@@ -5,9 +5,6 @@
 	path = public
 	url = https://github.com/jfinmaniv/jfinmaniv.github.io.git
 	branch = master
-[submodule "themes/hugo-PaperMod"]
-	path = themes/hugo-PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod
 [submodule "themes/soho"]
 	path = themes/soho
 	url = https://github.com/alexandrevicenzi/soho
