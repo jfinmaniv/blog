@@ -11,5 +11,3 @@ externalLink = ""
 series = []
 +++
 
-# Coming soon
-![me](/images/profile.jpg)

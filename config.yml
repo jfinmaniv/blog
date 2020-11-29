@@ -1,5 +1,5 @@
 baseurl: "https://www.johninman.dev/"
-title: ji
+title: "Home"
 theme: ghostwriter
 languageCode: en-us
 copyright: John Inman
@@ -29,7 +29,7 @@ privacy:
 
 author:
   name: John Inman
-  profile: ""
+  profile: "/page/about"
 
 taxonomies:
   tag: tags
@@ -39,7 +39,7 @@ params:
     - post
   intro: true
   headline: John Inman
-  description: Data Analyst
+  description: Environmental Data Analysis
   github: "https://github.com/jfinmaniv"
   # gitlab: "https://gitlab.com/XXX"
   linkedin: "https://linkedin.com/in/john-inman-3a029b138"
@@ -72,12 +72,12 @@ permalinks:
 
 menu:
   main:
-    - name: Projects
+    - name: Blog
       url: /
       weight: 1
     - name: About
-      url: /about/
+      url: /page/about/
       weight: 2
     - name: Contact
-      url: /contact/
+      url: /page/contact/
       weight: 3
