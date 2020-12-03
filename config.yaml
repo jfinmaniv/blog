@@ -1,21 +1,3 @@
 baseURL: https://www.johninman.dev
 languageCode: en-us
 title: John Inman
-
-# sectionPagesMenu: "main"
-
-menu:
-  main:
-    - name: home
-      url: /posts
-      weight: 1
-    # - name: posts
-    #   url: /posts/
-    #   weight: 2
-    - name: about
-      url: /about
-      weight: 3
-    - name: contact
-      url: /contact
-      weight: 4
-

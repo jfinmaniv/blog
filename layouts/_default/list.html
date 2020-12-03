@@ -1,6 +1,5 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  <hr>
   {{ range .Pages.ByPublishDate.Reverse }}
   <p>
   <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
@@ -9,5 +8,4 @@
   </a>
   </p>
   {{ end }}
-  <hr>
 {{ end }}
