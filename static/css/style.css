@@ -1,52 +1,114 @@
+@font-face {
+    font-family: merriweather;
+    src: url(/font/Merriweather-Light.woff2);
+}
+@font-face {
+    font-family: merriweather-sans;
+    src: url(/font/MerriweatherSans-Light.woff2);
+}
+@media only screen 
+and (max-width: 40rem) 
+and (orientation: portrait) {
+    .shy {
+        display: none;
+    }
+    .notshy {
+        margin-left: auto;
+    }
+}
+@media only screen 
+and (max-width: 40rem) 
+and (orientation: landscape) {
+     html {
+        -webkit-text-size-adjust: none;
+     }
+}
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background: whitesmoke;
+body {
+    background: floralwhite;
+    display: flex;
+    flex-direction: column;
+    font-family: merriweather;
+    line-height: 1.7rem;
+    margin: auto;
+    max-width: 40rem;
+    min-height: 100vh;
 }
-
-.container {
-  position: relative;
-  min-height: 100%;
+a { 
+    color: steelblue;
+    text-decoration: none;
 }
-
-.navbar {
-  background-color: indigo;
-  padding: 5px;
+header ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.3rem 1rem 0.3rem 1rem;
 }
-
-.navbar a {
-  color: whitesmoke;
-  padding: 0px 20px;
-  font-weight: bold;
-  text-decoration: none;
+header a {
+    color: black;
+    font-family: merriweather-sans;
 }
-
-.content {
-  font-family: sans-serif;
-  margin:auto;
-  max-width: 960px;
+header a.group {
+    align-items: center;
+    display: flex;
 }
-
-.main {
-  padding: 20px;
-  padding-bottom: 2em;
+header img {
+    height: 2rem;
+    padding: 0rem 0.5rem 0rem 0rem;
 }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: indigo;
+header li.shy {
+    margin-left: auto;
 }
-
-.footer p {
-  color: whitesmoke;
-  text-align: center;
-  padding: 5px;
-  margin: 0;
+header li.r {
+    padding-left: 1rem;
+}
+hr {
+    background: steelblue;
+    border: 0rem;
+    height: 0.3rem;
+}
+hr.top {
+    margin: 0rem 0.5rem 1rem 0.5rem;
+}
+hr.bottom {
+    margin: 1rem 0.5rem 0rem 0.5rem;
+}
+main {
+    flex: 1;
+    padding: 0rem 1rem 0rem 1rem;
+}
+main hr {
+    height: 0.05rem;
+    margin: 3em auto 3rem auto;
+    width: 13rem;
+}
+footer {
+    margin: auto;
+}
+footer p {
+    color: gray;
+    font-family: merriweather-sans;
+    margin: 0rem;
+    padding: 0.3rem;
+}
+.title {
+    text-align: center;
+    font-family: merriweather-sans;
+    padding: 0rem;
+    margin-bottom: 0rem;
+}
+.description {
+    text-align: center;
+    font-family: merriweather-sans;
+    font-weight: normal;
+    margin: 0.5rem;
+}
+.date {
+    color: gray;
+    font-family: merriweather-sans;
+    margin-top: 0rem;
+    text-align: center;
 }

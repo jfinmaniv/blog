@@ -2,12 +2,16 @@
 <html>
     {{- partial "head.html" . -}}
     <body>
-      <div class="container">
+      <header>
         {{- partial "header.html" . -}}
-        <div class="content main">
-          {{- block "main" . }}{{- end }}
-        </div>
+      </header>
+      <hr class="top">
+      <main>
+        {{- block "main" . }}{{- end }}
+      </main>
+      <hr class="bottom">
+      <footer>
         {{- partial "footer.html" . -}}
-      </div>
+      </footer>
     </body>
 </html>

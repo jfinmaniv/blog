@@ -1,11 +1,15 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ range .Pages.ByPublishDate.Reverse }}
-  <p>
-  <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-  <a class="summary" href="{{ .RelPermalink }}">
-    <p>{{ .Summary }}</p>
-  </a>
-  </p>
+  {{ range $i, $e := .Site.RegularPages.ByPublishDate.Reverse }}
+    {{ if eq $e.Type "posts" }}
+      {{ if gt $i 0 }}
+        <hr>
+      {{ end }}
+      <a href="{{ .RelPermalink }}">
+        <h2 class="title">{{ .Title }}</h2>
+        <h3 class="description">{{ .Description }}</h3>
+        <p class="date">{{ .Date.Format " January 1, 2006"}}</p>
+      </a>
+      {{ .Summary }}
+    {{ end }}
   {{ end }}
 {{ end }}
