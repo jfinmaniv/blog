@@ -54,13 +54,10 @@ script to avoid starting over each time the connection was lost by adding an
 if statement around the download command:
 
 {{< highlight bash "linenos=table" >}}
-
-
 if ! [ -f $stripped_query_params ]
 then
     curl -f -b "$cookiejar" -c "$cookiejar" -L --netrc-file "$netrc" -g -o $stripped_query_params -- $line && echo || exit_with_error "Command failed with error. Please retrieve the data manually."
 fi
-
 {{< / highlight >}}
 
 I also hardcoded my password into the script to avoid having to type it in
