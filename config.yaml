@@ -8,5 +8,5 @@ markup:
       unsafe: true
   highlight:
     lineNumbersInTable: true
-    style: solarized-light
+    style: monokailight
 
