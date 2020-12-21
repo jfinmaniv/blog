@@ -1,6 +1,6 @@
 ---
 title: "Connect"
 date:
-draft: true
+draft: false
 ---
 

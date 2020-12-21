@@ -59,12 +59,3 @@ then
     curl -f -b "$cookiejar" -c "$cookiejar" -L --netrc-file "$netrc" -g -o $stripped_query_params -- $line && echo || exit_with_error "Command failed with error. Please retrieve the data manually."
 fi
 {{< / highlight >}}
-
-I also hardcoded my password into the script to avoid having to type it in
-each time:
-
-{{< highlight bash "linenos=table" >}}
-# read -s -p "Password: " password
-password=<password>
-{{< / highlight >}}
-

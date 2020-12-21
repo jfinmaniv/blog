@@ -2,7 +2,7 @@
   {{ range $i, $e := .Site.RegularPages.ByPublishDate.Reverse }}
     {{ if eq $e.Type "posts" }}
       {{ if gt $i 0 }}
-        <hr>
+        <hr class="sep">
       {{ end }}
       <a href="{{ .RelPermalink }}">
         <h2 class="title">{{ .Title }}</h2>
