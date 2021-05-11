@@ -1,8 +1,4 @@
 @font-face {
-    font-family: merriweather;
-    src: url(/font/Merriweather-Light.woff2);
-}
-@font-face {
     font-family: merriweather-sans;
     src: url(/font/MerriweatherSans-Light.woff2);
 }
@@ -72,7 +68,7 @@ main {
     padding: 0rem 1rem 0rem 1rem;
 }
 main p {
-    font-family: merriweather;
+    font-family: merriweather-sans;
 }
 h1, 
 h2, 
