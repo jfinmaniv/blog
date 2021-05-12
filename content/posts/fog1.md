@@ -1,7 +1,7 @@
 ---
-title: "Under the Weather, Part 1"
-description: "Creating a High-resolution Fog Map Using MODIS Satellite Data"
-date: 2020-12-17T08:04:12-08:00
+title: "Creating a High-resolution Fog Map Using MODIS Satellite Data"
+date: 2020-12-12
+lastmod: 2020-12-17
 draft: false
 ---
 
