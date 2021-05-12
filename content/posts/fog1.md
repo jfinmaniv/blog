@@ -5,13 +5,13 @@ date: 2020-12-17T08:04:12-08:00
 draft: false
 ---
 
-
 This series presents an hedonic analysis of fog in the city of Seaside, CA,
 near the Monterey Peninsula. Hedonic analysis is a method of estimating the
 value of something that does not have a price. The inspiration for this series
 was a school assignment I originally collaborated on with Winn McEnery. Part 1
 focuses on creating a high-resolution (250 m) fog map using MODIS satellite
 from NASA.
+
 
 ### MODIS
 
