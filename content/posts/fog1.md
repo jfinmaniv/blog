@@ -13,6 +13,9 @@ focuses on creating a high-resolution (250 m) fog map using MODIS satellite
 from NASA.
 
 
+
+
+
 ### MODIS
 
 The Moderate Resolution Imaging Spectroradiometer
