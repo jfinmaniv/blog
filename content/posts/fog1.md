@@ -5,6 +5,7 @@ date: 2020-12-17T08:04:12-08:00
 draft: false
 ---
 
+
 This series presents an hedonic analysis of fog in the city of Seaside, CA,
 near the Monterey Peninsula. Hedonic analysis is a method of estimating the
 value of something that does not have a price. The inspiration for this series
@@ -45,7 +46,7 @@ granules. The 250-m resolution bands comprise the visible spectrum and are
 only captured by day-time shots. Applying a day-only granule filter brought
 the number of granules down to a manageable 8,474.
 
-Clicking "download" will not initiate a bulk download of the data but rather
+Simply clicking "download" will not initiate a bulk download of the data but rather
 generate a list of links to the desired files, in this case 8,474 of them.
 Thankfully the Earthdata team also provides a download script that can be used
 to automate the process. It took about three days of running this script in
