@@ -1,16 +1,14 @@
 {{ define "main" }}
   {{ if eq .Type "posts" }}
-    <h2 class="title">{{ .Title }}</h2>
-    <!-- <h3 class="description">{{ .Description }}</h3> -->
-    <!-- <p class="date">{{ .Date.Format " January 1, 2006"}}</p> -->
+    <h2>{{ .Title }}</h2>
   {{ end }}
   <p>{{ .Content }}</p>
   {{ if isset .Params "lastmod" }}
-  <p class="date">
+  <p style="font-style: oblique; margin: 2rem 0 0 0;">
     Posted {{ .Date.Format "Jan. 02, 2006" }}; Last updated {{ .Lastmod.Format "Jan. 02, 2006" }}
   </p>
   {{ else }}
-  <p class="date">
+  <p style="font-style: oblique; margin: 2rem 0 0 0;">
     Posted {{ .Date.Format "Jan. 02, 2006" }}
   </p>
   {{ end }}

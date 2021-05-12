@@ -1,15 +1,1 @@
-{{ define "main" }}
-  {{ range $i, $e := .Site.RegularPages.ByPublishDate.Reverse }}
-    {{ if eq $e.Type "posts" }}
-      {{ if gt $i 0 }}
-        <hr class="sep">
-      {{ end }}
-      <a href="{{ .RelPermalink }}">
-        <h2 class="title">{{ .Title }}</h2>
-        <!-- <h3 class="description">{{ .Description }}</h3> -->
-      </a>
-      <!-- <p class="date">{{ .Date.Format " January 1, 2006"}}</p> -->
-      <p>{{ .Summary }}</p>
-    {{ end }}
-  {{ end }}
-{{ end }}
+_default/list.html
