@@ -5,12 +5,12 @@
   <p>{{ .Content }}</p>
   {{ if isset .Params "lastmod" }}
   <p style="font-style: oblique; margin: 2rem 0 0 0;">
-    Posted {{ .Date.Format "Jan. 02, 2006" }}; 
-    Last&nbsp;updated&nbsp;{{ .Lastmod.Format "Jan. 02, 2006" }}
+    Posted {{ .Date.Format "2006-02-01" }}; 
+    Last&nbsp;update&nbsp;{{ .Lastmod.Format "2006-02-01" }}
   </p>
   {{ else }}
   <p style="font-style: oblique; margin: 2rem 0 0 0;">
-    Posted {{ .Date.Format "Jan. 02, 2006" }}
+    Posted {{ .Date.Format "2006-02-01" }}
   </p>
   {{ end }}
 {{ end }}
