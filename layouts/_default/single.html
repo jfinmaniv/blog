@@ -1,16 +1,22 @@
 {{ define "main" }}
+
   {{ if eq .Type "posts" }}
     <h2>{{ .Title }}</h2>
   {{ end }}
+
   <p>{{ .Content }}</p>
-  {{ if isset .Params "lastmod" }}
-  <p style="font-style: oblique; margin: 2rem 0 0 0;">
-    Posted {{ .Date.Format "2006-01-02" }}; 
-    Last&nbsp;updated&nbsp;{{ .Lastmod.Format "2006-01-02" }}
-  </p>
-  {{ else }}
-  <p style="font-style: oblique; margin: 2rem 0 0 0;">
-    Posted {{ .Date.Format "2006-02-01" }}
-  </p>
+
+  {{ if eq .Type "posts" }}
+    {{ if isset .Params "lastmod" }}
+      <p style="font-style: oblique; margin: 2rem 0 0 0;">
+        Posted {{ .Date.Format "2006-01-02" }}; 
+        Last&nbsp;updated&nbsp;{{ .Lastmod.Format "2006-01-02" }}
+      </p>
+    {{ else }}
+      <p style="font-style: oblique; margin: 2rem 0 0 0;">
+        Posted {{ .Date.Format "2006-02-01" }}
+      </p>
+    {{ end }}
   {{ end }}
+
 {{ end }}
