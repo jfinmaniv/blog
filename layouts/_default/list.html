@@ -1,9 +1,6 @@
 {{ define "main" }}
   {{ range $i, $e := .Site.RegularPages.ByPublishDate.Reverse }}
     {{ if eq $e.Type "posts" }}
-      {{ if gt $i 0 }}
-        <hr style="margin: 2rem auto 2rem auto; width: 325px;">
-      {{ end }}
       <a href="{{ .RelPermalink }}">
         <h2>{{ .Title }}</h2>
       </a>

@@ -12,6 +12,8 @@ was a school assignment I originally collaborated on with Winn McEnery. Part 1
 focuses on creating a high-resolution (250 m) fog map using MODIS satellite
 from NASA.
 
+<!--more-->
+
 ### MODIS
 
 The Moderate Resolution Imaging Spectroradiometer
@@ -53,9 +55,17 @@ the background to download all the files. I found it necessary to modify the
 script to avoid starting over each time the connection was lost by adding an
 if statement around the download command:
 
-{{< highlight bash "linenos=table" >}}
-if ! [ -f $stripped_query_params ]
+{{< highlight bash >}}
+if [ ! -f $stripped_query_params ]
 then
-    curl -f -b "$cookiejar" -c "$cookiejar" -L --netrc-file "$netrc" -g -o $stripped_query_params -- $line && echo || exit_with_error "Command failed with error. Please retrieve the data manually."
+    curl -f -L -g\
+        -b "$cookiejar"\
+        -c "$cookiejar"\
+        --netrc-file "$netrc"\
+        -o $stripped_query_params\
+        -- $line\
+    && echo\
+    || exit_with_error\
+        "Command failed with error. Please retrieve the data manually."
 fi
 {{< / highlight >}}

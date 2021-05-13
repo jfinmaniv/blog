@@ -7,6 +7,5 @@ markup:
     renderer: 
       unsafe: true
   highlight:
-    lineNumbersInTable: true
     style: monokailight
 
