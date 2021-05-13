@@ -8,12 +8,12 @@
 
   {{ if eq .Type "posts" }}
     {{ if isset .Params "lastmod" }}
-      <p style="font-size: 0.95rem; normal; color: gray; margin: 2rem 0 0 0;">
+      <p style=" font-size: 0.9rem; color: gray; margin-top: 2rem;">
         Published: {{ .Date.Format "2 Jan 2006" }}
         <br> Last edited: {{ .Lastmod.Format "2 Jan 2006" }}
       </p>
     {{ else }}
-      <p style="font-style: oblique; margin: 2rem 0 0 0;">
+      <p style=" font-size: 0.9rem; color: gray; margin-top: 2rem;">
         This article was published on {{ .Date.Format "January 2, 2006" }}.
       </p>
     {{ end }}
